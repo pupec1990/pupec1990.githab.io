@@ -1,7 +1,14 @@
 html>
+<script>
+  window.onload = function()
+  {
+      setinterval(clockPainting,1000);
+  }
+</script>
     <head>
         <meta charset="utf-8">
         <title> Сайт web-студії "Web-DECO"</title>
+        <script src="js/clock1.js"></script>
         <script type="text/javascript">
           function send()
           {
@@ -56,6 +63,8 @@ html>
         </tr>
         <tr>
           <td width="30%" valign="top" >
+            <center><canvas id="canvas" height="120" width="120"></canvas></center>
+                <hr>
             <font size="5" color="navy"><h2>Новини</h2></font>
                 <font size="5" >
             <ul>
@@ -88,7 +97,7 @@ html>
                             <td><input type="password" size="10" maxlength="20" name="password"></td>
                         </tr>
                     </table>
-                <p align="center">
+                    <p align="center">
                     <input type="sumbit" value="Зареєструватись">
                     <input type="sumbit" value="Очистити">
                 </p>
